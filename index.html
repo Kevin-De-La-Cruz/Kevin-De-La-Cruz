@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRAINTIVE | Desarrollo de Software</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/estilos.css">
+  <!-- SEO y Favicon -->
+  <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+  <meta name="description"
+    content="BRAINTIVE: Soluciones de software a medida, automatización empresarial, aplicaciones web, soporte técnico y más.">
+  <meta name="keywords" content="software, desarrollo, automatización, BRAINTIVE, sistemas, tecnología">
+  <meta name="author" content="BRAINTIVE">
+</head>
+
+<body>
+  <nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo">BRAINTIVE</a>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li class="dropdown">
+        <a href="#">Quiénes somos</a>
+        <ul class="dropdown-content">
+          <li><a href="#" onclick="openModal('mision')">Misión</a></li>
+          <li><a href="#" onclick="openModal('vision')">Visión</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="nav-contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <header>
+    <div class="header-content">
+      <div class="logo-placeholder">
+        <img src="imagenes/logo.jpeg" alt="Logo BRAINTIVE">
+      </div>
+      <div>
+        <section id="contacto"></section>
+        <h1>BRAINTIVE</h1>
+        <p> <a href="formulario_contacto.html" target="_blank" class="cta-button">Contáctanos</a>
+          Impulsamos tu negocio con software inteligente y soluciones a medida.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Quiénes somos?</h2>
+      <p>BRAINTIVE es una empresa enfocada en el desarrollo de software creativo e inteligente. Ayudamos a negocios y
+        organizaciones a transformar sus procesos a través de soluciones tecnológicas funcionales, confiables y
+        personalizadas. Nuestra esencia combina innovación, técnica y pasión por el crecimiento de nuestros clientes.
+      </p>
+
+
+    </section>
+
+    <section>
+      <section id="servicios"></section>
+      <h2>Nuestros servicios</h2>
+      <p>"Aquí puedes ver algunos de los proyectos que hemos realizado para nuestros clientes. Nos especializamos en
+        ofrecer soluciones personalizadas que resuelven desafíos reales."</p>
+      <ul class="services">
+        <li><span>💻 Desarrollo de Software a Medida</span>Creamos sistemas personalizados para resolver las necesidades
+          específicas de cada cliente: control de inventario, puntos de venta, sistemas escolares, administrativos,
+          contables, etc.</li>
+        <li><span>🧠 Automatización de Procesos Empresariales</span>Digitalizamos procesos manuales en las empresas para
+          aumentar su eficiencia y reducir errores operativos.</li>
+        <li><span>🌐 Aplicaciones Web y Escritorio</span>Diseño y desarrollo de aplicaciones modernas que funcionen
+          desde cualquier lugar o en instalaciones locales, según las necesidades del cliente.</li>
+        <li><span>🧰 Soporte Técnico y Mantenimiento</span>Ofrecemos mantenimiento preventivo y correctivo para equipos
+          de cómputo, asegurando un óptimo funcionamiento.</li>
+        <li><span>🧩 Instalación de Paquetería y Configuración de Sistemas</span>Instalamos software como Microsoft
+          Office, antivirus, controladores.</li>
+        <li><span>🔒 Asesoría Tecnológica</span>Brindamos orientación a negocios que buscan implementar soluciones
+          digitales, desde la planificación hasta la ejecución del proyecto.</li>
+      </ul>
+    </section>
+
+    <section id="experiencia">
+      <h2>📂 Nuestra Experiencia</h2>
+      <!-- Sección Portafolio -->
+      <section class="portfolio-section" id="portafolio">
+        <!-- Modal Galería Expandida -->
+        <div id="modalGaleria" class="modal">
+          <div class="modal-content galeria">
+            <span class="close-modal">&times;</span>
+            <h2>Más Proyectos</h2>
+            <div class="modal-grid">
+              <div class="modal-item">
+                <img src="imagenes/escolar.png" alt="Proyecto 4">
+                <p>Sistema de Inventario para Panadería</p>
+              </div>
+              <div class="modal-item">
+                <img src="imagenes/egresos.jpg" alt="Proyecto 5">
+                <p>Reconocimiento de Imágenes con IA</p>
+              </div>
+              <div class="modal-item">
+                <img src="imagenes/general.jpg" alt="Proyecto 6">
+                <p>Dashboard para Análisis de Datos</p>
+              </div>
+              <div class="modal-item">
+                <img src="imagenes/estudiante.png" alt="Proyecto 7">
+                <p>App de Gestión para Asesores Educativos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-container" data-aos="fade-up">
+          <h2>Proyectos Destacados</h2>
+          <p class="portfolio-subtitle">Algunas de nuestras soluciones personalizadas que han impulsado a nuestros
+            clientes.</p>
+
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <img src="imagenes/general.jpg" alt="Sistema de Gestión Educativa">
+              <div class="portfolio-info">
+                <h3>Sistema de Gestión Educativa</h3>
+                <p>Plataforma diseñada para el IEAT que automatiza procesos académicos y mejora el aprendizaje de
+                  adultos.</p>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <img src="imagenes/reporte.png" alt="App para Materiales Pétreos">
+              <div class="portfolio-info">
+                <h3>Aplicación de Venta de Materiales</h3>
+                <p>Aplicación web intuitiva para gestionar pedidos, inventarios y clientes para una empresa de
+                  construcción.</p>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <img src="imagenes/escolar.png" alt="Planificador de Rutas">
+              <div class="portfolio-info">
+                <h3>Sistema de Planificación de Rutas</h3>
+                <p>Software logístico para optimizar entregas y recorridos de unidades en una empresa de transporte.</p>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <img src="imagenes/escolar.png" alt="Planificador de Rutas">
+              <div class="portfolio-info">
+                <h3>Sistema de Planificación de Rutas</h3>
+                <p>Software logístico para optimizar entregas y recorridos de unidades en una empresa de transporte.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="portfolio-button">
+          <button class="btn-ver-mas" onclick="abrirGaleria()">Ver más proyectos</button>
+        </div>
+
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Síguenos en redes sociales:</p>
+    <div class="socials">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <p style="margin-top: 1rem;">&copy; 2025 BRAINTIVE. Todos los derechos reservados.</p>
+  </footer>
+  <script src="js/scripts.js"></script>
+
+  <!-- Modales flotantes visión y misión -->
+  <div id="modal-mision" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('mision')">&times;</span>
+      <h2>Misión</h2>
+      <p>Desarrollar soluciones de software innovadoras y personalizadas que impulsen el crecimiento de nuestros
+        clientes, combinando inteligencia, creatividad y tecnología de vanguardia para resolver desafíos reales de
+        manera eficiente y sostenible.</p>
+    </div>
+  </div>
+
+  <div id="modal-vision" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('vision')">&times;</span>
+      <h2>Visión</h2>
+      <p>Consolidarnos como una empresa confiable y competitiva en el desarrollo de software personalizado, reconocida
+        por brindar soluciones tecnológicas creativas y funcionales a pequeñas y medianas empresas, mientras construimos
+        una base sólida para crecer y expandirnos de manera sostenible.</p>
+    </div>
+  </div>
+
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // duración de animaciones
+      once: true      // solo animar una vez
+    });
+  </script>
+
+
+
+</body>
+
+</html>
